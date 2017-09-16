@@ -46,7 +46,7 @@ gulp.task('nodemon', (cb) => {
     ext: 'js json hbs',
 
     // watch core server file(s) that require server restart on change
-    watch: ['bin', 'views']
+    watch: ['bin', 'server']
   })
     .on('start', () => {
       // ensure start only got called once
