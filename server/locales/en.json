@@ -3,5 +3,11 @@
     "authors": ["ARazzhivin"]
   },
   "site name": "My site",
-  "welcome": "Welcome!"
+  "welcome": "Welcome!",
+  "Home": "Home",
+  "Works": "Works",
+  "About": "About",
+  "Contacts": "Contacts",
+  "Web programmer and designer" : "Web programmer and designer",
+  "My works": "My works"
 }

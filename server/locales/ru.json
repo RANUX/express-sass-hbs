@@ -3,5 +3,11 @@
     "authors": ["ARazzhivin"]
   },
   "site name": "My site",
-  "welcome": "Добро пожаловать!"
+  "welcome": "Добро пожаловать!",
+  "Home": "Домой",
+  "Works": "Работы",
+  "About": "О себе",
+  "Contacts": "Контакты",
+  "Web programmer and designer" : "Web программист и дизайнер",
+  "My works": "Мои работы"
 }

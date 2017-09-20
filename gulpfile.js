@@ -8,6 +8,7 @@ const autoprefixer = require('autoprefixer');
 const pxtorem = require('postcss-pxtorem');
 const sourcemaps = require('gulp-sourcemaps');
 const postcss = require('gulp-postcss');
+const fontgen = require('gulp-fontgen');
 
 // we'd need a slight delay to reload browsers
 // connected to browser-sync after restarting nodemon
@@ -101,4 +102,11 @@ gulp.task('default', ['browser-sync'], () => {
   gulp.watch('public/**/*.css', ['css']);
   gulp.watch('public/**/*.html', ['bs-reload']);
   gulp.watch('sass/**/*.+(scss|sass)', ['sass']);
+});
+
+gulp.task('fontgen', () => {
+  return gulp.src('./fonts/*.{ttf,otf}')
+    .pipe(fontgen({
+      dest: 'public/fonts/'
+    }));
 });
